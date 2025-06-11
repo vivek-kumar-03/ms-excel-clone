@@ -10,7 +10,7 @@ function createSpreadsheet(containerId) {
 
     spreadsheet.appendChild(document.createElement('div'));
 
-    for (let col = 0; col < 20; col++) {
+    for (let col = 0; col < 26; col++) {
         const colHeader = document.createElement('div');
         colHeader.className = 'header';
         colHeader.textContent = String.fromCharCode(65 + col);
@@ -23,7 +23,7 @@ function createSpreadsheet(containerId) {
         rowHeader.textContent = row;
         spreadsheet.appendChild(rowHeader);
 
-        for (let col = 0; col < 20; col++) {
+        for (let col = 0; col < 26; col++) {
             const cell = document.createElement('div');
             cell.className = 'cell';
             cell.contentEditable = true;
